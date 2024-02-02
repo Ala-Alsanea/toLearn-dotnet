@@ -15,7 +15,7 @@ namespace toLearn.Controllers
         private static List<Employees> employees = new List<Employees>{
             new Employees(),
             new Employees {Id=1,Name="creper",Title="monster"},
-            new Employees {Id=2,Title="monster"},
+            new Employees {Id=2,Title="monster"}
 
         };
 
