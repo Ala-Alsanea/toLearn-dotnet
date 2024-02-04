@@ -21,7 +21,7 @@ namespace toLearn
                         Pokemon = new Pokemon()
                         {
                             Name = "Pikachu",
-                            Birthdate = new DateTime(1903,1,1),
+                            BirthDate = new DateTime(1903,1,1),
                             PokemonCategories = new List<PokemonCategory>()
                             {
                                 new PokemonCategory { Category = new Category() { Name = "Electric"}}
@@ -78,7 +78,7 @@ namespace toLearn
                             }
                         }
                     },
-                                    new PokemonOwner()
+                    new PokemonOwner()
                     {
                         Pokemon = new Pokemon()
                         {
@@ -112,6 +112,7 @@ namespace toLearn
                 };
                 dataContext.PokemonOwners.AddRange(pokemonOwners);
                 dataContext.SaveChanges();
+                Console.WriteLine("from SeedDataContext");
             }
         }
     }
